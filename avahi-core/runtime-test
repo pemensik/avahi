@@ -9,4 +9,8 @@ ip netns
 
 id
 
-capsh --print
+capsh --print 1>&2
+
+mount
+
+exit 1
