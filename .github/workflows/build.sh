@@ -23,6 +23,8 @@ case "$1" in
         ./bootstrap.sh --enable-tests --prefix=/usr
         make -j"$(nproc)" V=1
         make check VERBOSE=1
+	echo "Detailed reports:"
+	find -name test-suite.log -exec cat '{}' ';'
         ;;
     *)
         printf '%s' "Unknown command '$1'" >&2
