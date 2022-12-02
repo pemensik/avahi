@@ -1,0 +1,16 @@
+#!/bin/sh
+# show some environment of a container
+
+uname -a
+
+ip a
+
+ip netns
+
+id
+
+capsh --print 1>&2
+
+mount
+
+exit 1
