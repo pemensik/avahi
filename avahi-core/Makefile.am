@@ -48,7 +48,8 @@ noinst_PROGRAMS = \
 TESTS = \
 	dns-spin-test \
 	dns-test \
-	hashmap-test
+	hashmap-test \
+	runtime-test
 endif
 
 libavahi_core_la_SOURCES = \
